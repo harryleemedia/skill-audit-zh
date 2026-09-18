@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Audit（技能審計）"
+  short_description: "審查技能，並測試它們是否仍然有幫助"
+  default_prompt: "使用 $skill-audit 審查我已安裝的技能，並找出最值得評估的候選。"
