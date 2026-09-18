@@ -1,0 +1,70 @@
+{
+  "title": "合成的技能審計範例",
+  "coverage": "僅供示範；未檢查任何真實安裝環境或使用日誌",
+  "summary": "一個缺少的輔助檔案值得修復；重疊的審查工作流程需要在情境中檢查。",
+  "findings": [
+    {
+      "skill": "weekly-report",
+      "recommendation": "revise",
+      "strength": "說明性範例",
+      "finding": "在這個虛構的套件中，被指名的輔助檔案不存在。在更改工作流程之前，先找出預期的依賴。",
+      "evidence": [
+        {
+          "path": "/example/skills/weekly-report/SKILL.md",
+          "line": 12,
+          "excerpt": "Run scripts/build_report.py."
+        }
+      ],
+      "preserve": "必要的總計與報告格式"
+    },
+    {
+      "skill": "plan-review",
+      "recommendation": "evaluate",
+      "strength": "說明性範例",
+      "finding": "強制性的第二次審查可能抓出遺漏，也可能只是重複第一次審查。需要任務結果才能決定是否保留這個額外步驟。",
+      "evidence": [
+        {
+          "path": "/example/skills/plan-review/SKILL.md",
+          "line": 8,
+          "excerpt": "Always perform a second review of the plan."
+        }
+      ],
+      "preserve": "對缺少依賴與驗證步驟的檢查"
+    }
+  ],
+  "action_plan": {
+    "fix_now": [
+      {
+        "skill": "weekly-report",
+        "reason": "在依賴此工作流程之前，先找出或還原缺少的必要輔助檔案"
+      }
+    ],
+    "review_retirement": [],
+    "test_next": [
+      {
+        "skill": "plan-review",
+        "reason": "判斷第二次審查是否能抓出額外的重大遺漏",
+        "task": "審查一份提供的計畫，其中有已知缺少的依賴與驗證步驟",
+        "success_criteria": "找出真正的遺漏而不捏造問題；比較目前、較簡化與基準三種程序"
+      }
+    ],
+    "test_later": [
+      {
+        "skill": "weekly-report",
+        "reason": "在依賴修復後評估其報告行為",
+        "task": "從一份有已知總計的小型帳本產生週報",
+        "success_criteria": "保留每一個必要的總計與報告格式",
+        "prerequisite": "必要的輔助檔案已還原並通過其自身的檢查"
+      }
+    ],
+    "keep": [
+      {
+        "skill": "weekly-report",
+        "reason": "在任何修復或簡化過程中，保留其必要的總計與報告格式"
+      }
+    ]
+  },
+  "limitations": [
+    "合成資料；不做任何效能宣稱或退役建議"
+  ]
+}

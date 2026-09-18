@@ -1,0 +1,97 @@
+{
+  "title": "合成的基準測試範例 — 不是實測數據",
+  "coverage": "示範：一個虛構案例、三個分支",
+  "runs": [
+    {
+      "case_id": "synthetic-case",
+      "repeat": 1,
+      "arm": "original",
+      "model": "synthetic-demo",
+      "effort": "not-applicable",
+      "environment_id": "synthetic-env",
+      "inputs_id": "synthetic-inputs",
+      "completion": "complete",
+      "valid": true,
+      "contamination": false,
+      "isolation_evidence": "合成範例，不是實際執行的試驗",
+      "expectations": [
+        {
+          "id": "preserve-values",
+          "verdict": "pass",
+          "evidence": "虛構的測試夾具值已保留"
+        }
+      ],
+      "time_seconds": 12.0,
+      "total_tokens": null,
+      "metrics_source": "合成的示範數值，不是實測",
+      "output_preview": "虛構的報告預覽",
+      "artifact_paths": [],
+      "notes": [
+        "不要解讀為實測結果"
+      ]
+    },
+    {
+      "case_id": "synthetic-case",
+      "repeat": 1,
+      "arm": "simplified",
+      "model": "synthetic-demo",
+      "effort": "not-applicable",
+      "environment_id": "synthetic-env",
+      "inputs_id": "synthetic-inputs",
+      "completion": "complete",
+      "valid": true,
+      "contamination": false,
+      "isolation_evidence": "合成範例，不是實際執行的試驗",
+      "expectations": [
+        {
+          "id": "preserve-values",
+          "verdict": "pass",
+          "evidence": "虛構的測試夾具值已保留"
+        }
+      ],
+      "time_seconds": 10.0,
+      "total_tokens": null,
+      "metrics_source": "合成的示範數值，不是實測",
+      "output_preview": "虛構的報告預覽",
+      "artifact_paths": [],
+      "notes": [
+        "不要解讀為實測結果"
+      ]
+    },
+    {
+      "case_id": "synthetic-case",
+      "repeat": 1,
+      "arm": "baseline",
+      "model": "synthetic-demo",
+      "effort": "not-applicable",
+      "environment_id": "synthetic-env",
+      "inputs_id": "synthetic-inputs",
+      "completion": "complete",
+      "valid": true,
+      "contamination": false,
+      "isolation_evidence": "合成範例，不是實際執行的試驗",
+      "expectations": [
+        {
+          "id": "preserve-values",
+          "verdict": "pass",
+          "evidence": "虛構的測試夾具值已保留"
+        }
+      ],
+      "time_seconds": 11.0,
+      "total_tokens": null,
+      "metrics_source": "合成的示範數值，不是實測",
+      "output_preview": "虛構的報告預覽",
+      "artifact_paths": [],
+      "notes": [
+        "不要解讀為實測結果"
+      ]
+    }
+  ],
+  "comparisons": [],
+  "recommendations": [
+    "不要從這個合成範例推斷技能價值"
+  ],
+  "limitations": [
+    "所有數值都是為了展示報告結構而虛構的"
+  ]
+}
